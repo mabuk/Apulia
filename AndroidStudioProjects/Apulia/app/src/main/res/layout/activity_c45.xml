@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.apuliassicurazioni.mobile.C45Activity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_c45" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextViewAnni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_age"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/TextViewAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:onClick="goNascita"
+                android:text="@string/label_modifica" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_durata"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/SpinnerDurata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_frazionamento"
+                android:textSize="16dp"/>
+
+            <Spinner
+                android:id="@+id/SpinnerFrazionamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:entries="@array/frazionamenti_array"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Provvigioni al:"
+                android:textSize="16dp"/>
+
+            <Spinner
+                android:id="@+id/SpinnerProvvigioni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:entries="@array/provvigioni_array"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/iniziale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_iniziale"
+            android:layout_marginTop="6dp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/aggiuntivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_aggiuntivo"
+            android:layout_marginTop="6dp"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/calcola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="calcola"
+            android:text="@string/label_calcola" />
+
+        <TextView
+            android:id="@+id/text_premio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/label_capitale_assicurato"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/premio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0,00 €"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/stampa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="stampa"
+            android:text="@string/label_stampa" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

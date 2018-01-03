@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Preventivatore Individuali</string>
+    <string name="label_tm11">APULIA TI PROTEGGE (TM11)</string>
+    <string name="label_m50">VALORE UNICO (M50)</string>
+    <string name="label_c45">VALORE (C45)</string>
+    <string name="label_calcola">CALCOLA</string>
+    <string name="label_stampa">STAMPA</string>
+    <string name="label_continua">CONTINUA</string>
+    <string name="label_age">Età in anni:</string>
+    <string name="label_durata">Durata:</string>
+    <string name="label_modifica">Modifica:</string>
+    <string name="label_pdf">Genera PDF</string>
+    <string name="label_premio_versare">PREMIO DA VERSARE ALLA SOTTOSCRIZIONE</string>
+    <string name="label_premio_rate">PREMIO DI RATA SUCCESSIVA</string>
+    <string name="label_capitale_assicurato">CAPITALE ASSICURATO INIZIALE TOTALE</string>
+    <string name="desc_tm11">Assicurazione TCM a capitale costante a premio annuo con raddoppio, triplicazione del capitale</string>
+    <string name="desc_c45">Assicurazione mista a capitale e premio annuo rivalutabili con garanzie complementari</string>
+    <string name="input_cognome">Cognome</string>
+    <string name="input_nome">Nome</string>
+    <string name="input_nascita">Data di nascita</string>
+    <string name="input_durata">Durata in anni</string>
+    <string name="input_frazionamento">Frazionamento:</string>
+    <string name="value_frazionamento1">Annuale</string>
+    <string name="value_frazionamento2">Trimestrale</string>
+    <string name="value_frazionamento3">Semestrale</string>
+    <string-array name="frazionamenti_array">
+        <item>@string/value_frazionamento1</item>
+        <item>@string/value_frazionamento2</item>
+        <item>@string/value_frazionamento3</item>
+    </string-array>
+    <string-array name="provvigioni_array">
+        <item>100%</item>
+        <item>50%</item>
+    </string-array>
+    <string name="input_capitale">Capitale assicurato iniziale</string>
+    <string name="input_iniziale">Premio iniziale di rata</string>
+    <string name="input_aggiuntivo">Premio unico iniziale aggiuntivo</string>
+</resources>

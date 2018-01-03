@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.apuliassicurazioni.mobile.MainActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/tm11"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="goTM11"
+            android:text="@string/label_tm11" />
+        <Button
+            android:id="@+id/c45"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="@string/label_c45"
+            android:layout_weight="1"
+            android:onClick="goC45"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent" />
+        <Button
+            android:id="@+id/m50"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="goM50"
+            android:text="@string/label_m50" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

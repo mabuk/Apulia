@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.apuliassicurazioni.mobile.StampaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/cognome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_cognome"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/input_nome"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/stampa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buildPdf"
+            android:text="@string/label_pdf" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
